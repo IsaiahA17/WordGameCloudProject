@@ -1,0 +1,85 @@
+.menu 
+{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 20%;
+    text-align: center; 
+}
+  
+.navbar 
+{
+    display: inline-block;
+}
+  
+.navbar a 
+{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar a:hover 
+{
+    background-color: #111;
+}
+
+.main
+{
+    margin: auto;
+    border-style: ridge; 
+    border-width: 5px; 
+    background-color: gray; 
+    color: white; 
+    height: 90%; 
+    width: 60%;
+    display: flex; 
+    flex-direction: column;
+}
+
+body
+{
+    background-color: rgb(80, 72, 72); 
+    font-size: 25px;
+}
+
+.leaderboard
+{
+    list-style-type: none;
+}
+
+h1
+{
+    line-height: 0px;
+}
+
+table 
+{
+    width: 96%;
+}
+
+th 
+{
+    border: 1px solid black; 
+    text-align: center;
+    color: white;
+}
+
+td 
+{
+    border: 1px solid black; 
+    text-align: center;
+    color: white;
+}
+
+.inputbox
+{
+    width: 300px;
+    height: 30px;
+    font-size: large;
+}

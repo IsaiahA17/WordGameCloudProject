@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block input %}
+<div class = "sourceWord">
+<h2>{{ sourceWord }} </h2>
+</div>
+    <form method="POST" action="/process_pattern">
+        Enter Seven Words: <input class = "inputbox" type="TEXT" name="attempt" required>
+        <input type = "SUBMIT" value="Confirm">
+    </form>
+{% endblock %}

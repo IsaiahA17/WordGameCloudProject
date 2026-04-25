@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block rules %}
+    <ul>
+        <li>
+            You must enter seven words.
+        </li>
+        <li>
+            Any of the words cannot be the same as the given word.
+        </li>
+        <li>
+            Duplicate words are not allowed.
+        </li>
+        <li>
+            All words must be in the dictionary.
+        </li>
+        <li>
+            Each letter in any of the words entered must also be in the given word.
+        </li>
+        <li>
+            You cannot use a letter more times than it appears in the given word.
+        </li>
+        <li>
+            All words must have at least four letters.
+        </li>
+        
+    </ul>
+
+    <form method="POST" action="/input">
+        <input type = "SUBMIT" value="Play Game">
+    </form>
+{% endblock %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='CA3.css') }}">
+        <title>CA3</title>
+    </head>
+    
+    <body>
+        <div>
+            <ul class='menu'>
+                <li class="navbar"><a href="/">Rules</a></li>
+                <li class="navbar"><a href="/top10">Leaderboards</a></li>
+                <li class="navbar"><a href="/logs">Logs</a></li>
+            </ul>
+        </div>
+
+        <br>
+        
+        <div class = main>
+        <h1>{{ title }}</h1>
+        {% block high_scores %}
+        {% endblock %}
+        
+        {% block input %}       
+        {% endblock %}
+
+        {% block rules %}
+        {% endblock %}
+
+        {% block endscreen %}
+        {% endblock %}
+
+        {% block logs %}
+        {% endblock %}
+    </div>
+    </body>

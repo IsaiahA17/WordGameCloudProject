@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block high_scores %}
+<ul class = 'leaderboard'>
+        <table class = "table">
+            <tr>
+                <th>Position</th>
+                <th>Time</th>
+                <th>Name</th>
+                <th>Sourceword</th>
+                <th>Attempt</th>
+            </tr>
+            {% for high_score in high_scores %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>&nbsp{{high_score[0]}}&nbsp</td>
+                <td>&nbsp{{high_score[1]}}&nbsp</td>
+                <td>&nbsp{{high_score[2]}}&nbsp</td>
+                <td>&nbsp{{high_score[3]}}&nbsp</td>
+            </tr>
+            {% endfor %}
+        </table> 
+</ul>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block endscreen %}
+{{ result }}
+    <form method="POST" action="/enter_details">
+        Enter Your Name: <input type="TEXT" name="username" required>
+        <br>
+        <input type = "SUBMIT" value="Confirm">
+    </form>
+    <br>
+{% endblock %}
