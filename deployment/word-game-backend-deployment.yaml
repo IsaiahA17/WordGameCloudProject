@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: word-game-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: word-game
+  template:
+    metadata:
+      labels:
+        app: word-game
+    spec:
+      containers:
+      - name: word-game
+        image: nash781/word-game-backend:v9
+        ports:
+        - containerPort: 5000
+        env:
+        - name: COSMOS_ENDPOINT
+          valueFrom:
+            secretKeyRef:
+              name: cosmos-secret
+              key: endpoint
+        - name: COSMOS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: cosmos-secret
+              key: key

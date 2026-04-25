@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu 
+{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 60%;
+    text-align: center; 
+}
+  
+.navbar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  width: 60%;
+}
+
+.main
+{
+    margin: auto;
+    margin-top: 20px;
+    border-style: ridge; 
+    border-width: 5px; 
+    background-color: gray; 
+    color: white; 
+    width: 60%;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+}
+
+h2
+{
+    color: white;
+    text-align: center;
+}
+
+body
+{
+    background-color: rgb(80, 72, 72); 
+    font-size: 25px;
+}
+.leaderboard
+{
+    list-style-type: none;
+}
+h1
+{
+    line-height: 0px;
+}
+table 
+{
+    width: 96%;
+}
+th 
+{
+    text-align: center;
+    color: white;
+}
+td 
+{
+    text-align: center;
+    color: white;
+}
+.inputbox
+{
+    width: 300px;
+    height: 30px;
+    font-size: large;
+}
