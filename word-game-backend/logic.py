@@ -113,7 +113,7 @@ def getLogs():
     return [(i["success"], i["sourceWord"], i["attempt"], i["dateTime"]) for i in items]
 
 def getHighScores():
-    query = "SELECT TOP 10 c.time, c.who, c.sourceWord, c.attempt FROM c WHERE c.success = 'WIN' AND c.time > 0"
+    query = "SELECT TOP 10 c.time, c.who, c.sourceWord, c.attempt FROM c WHERE c.success = 'WIN' AND c.time > 0 ORDER BY c.time ASC"
     items = list(game_container.query_items(query=query, enable_cross_partition_query=True))
     return [(i["time"], i["who"], i["sourceWord"], i["attempt"]) for i in items]
 
